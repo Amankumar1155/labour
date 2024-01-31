@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:text="All Trad Solutions"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<TextView
+    android:textStyle="bold"
+    android:layout_marginTop="80dp"
+    android:layout_marginLeft="20dp"
+    android:text="Login | SignUp"
+    android:textSize="25sp"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    <EditText
+        android:textStyle="bold"
+        android:id="@+id/contactNum"
+        android:hint="+91 | "
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="#F3EFEF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_continue"
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<TextView
+    android:text="By processing, you consent to the Terms and Conditions "
+    android:textSize="13sp"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    />
+
+    <TextView
+        android:text="specified on our plateform"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/website_url"
+        android:text="Website"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textColor="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Any Help Contact Us :"
+        android:textColor="@color/white"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/calling"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:src="@drawable/whatsapp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="30dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
