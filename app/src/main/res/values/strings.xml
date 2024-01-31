@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Labour</string>
+
+    <string name="partner">Registration Form</string>
+
+    <string-array name="roles">
+        <item>Workers</item>
+        <item>Contractors</item>
+    </string-array>
+
+
 </resources>

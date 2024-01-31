@@ -19,6 +19,9 @@
         tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".partnerregistration"
+            android:exported="false" />
+        <activity
             android:name=".customerPartner"
             android:exported="false" />
         <activity
