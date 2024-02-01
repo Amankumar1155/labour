@@ -59,6 +59,7 @@
             android:src="@drawable/customer" />
 
         <Button
+            android:id="@+id/customerregister"
             android:layout_width="162dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"

@@ -224,16 +224,19 @@
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_weight="1"
-            android:clickable="true"
-            android:id="@+id/permanent"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/permanentworker"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
     </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/permanent"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/permanentworker"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/daily"
@@ -244,6 +247,7 @@
         android:src="@drawable/dailworker"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp" />
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
