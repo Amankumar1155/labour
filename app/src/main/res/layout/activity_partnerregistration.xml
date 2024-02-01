@@ -139,53 +139,18 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <FrameLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="150dp"/>
         <ImageView
-            android:src="@drawable/map"
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="150dp"
+            android:src="@drawable/map" />
+
+
     </LinearLayout>
-        
-    </LinearLayout>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     <RadioGroup
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="13dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -256,18 +221,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_weight="1"
-            android:clickable="true"
-            android:id="@+id/daily"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/dailworker"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_weight="1"
             android:clickable="true"
@@ -279,6 +235,16 @@
             app:civ_border_color="#FF000000"/>
     </LinearLayout>
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/daily"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@drawable/dailworker"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -286,12 +252,12 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="30dp"
             android:layout_weight="1"
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:text="Daily Worker"
+            android:text="Daily Workers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -300,7 +266,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Permanent Worker"
+            android:text="Permanent Workers"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -310,7 +276,7 @@
         android:layout_width="237dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:text="S u b m i t"
         android:textSize="20dp" />
 
