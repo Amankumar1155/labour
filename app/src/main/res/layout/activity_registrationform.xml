@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bg1"
     android:orientation="vertical">
 
@@ -17,11 +15,8 @@
         android:layout_marginTop="10dp"
         android:text="Enter Your Details First"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20dp"/>
+
     <View
         android:layout_width="400dp"
         android:layout_height="1dp"
@@ -44,7 +39,7 @@
             android:inputType="textCapWords"
             android:maxLength="15"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +56,7 @@
             android:background="#5676"
             android:hint="Email.."
             android:inputType="textEmailAddress"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +73,7 @@
             android:gravity="center"
             android:text="+91 | "
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
 
         <EditText
             android:id="@+id/editTextPhoneNumber"
@@ -89,7 +84,7 @@
             android:inputType="number"
             android:maxLength="10"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -106,21 +101,20 @@
             android:background="#5676"
             android:hint="Address.."
             android:inputType="textPostalAddress"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="15dp">
 
         <ImageView
             android:clickable="true"
             android:layout_width="80dp"
             android:layout_height="41dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/location" />
+            android:src="@drawable/location"/>
 
         <TextView
             android:layout_width="249dp"
@@ -132,8 +126,9 @@
             android:text="Use My Current Location"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
@@ -144,9 +139,7 @@
             android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:src="@drawable/map" />
-
-
+            android:src="@drawable/map"/>
     </LinearLayout>
 
     <RadioGroup
@@ -163,7 +156,7 @@
             android:layout_marginRight="35dp"
             android:text="Gender"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <RadioButton
             android:layout_weight="1"
@@ -171,7 +164,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Male"
-            android:textSize="20dp" />
+            android:textSize="20dp"/>
 
         <RadioButton
             android:layout_weight="1"
@@ -197,7 +190,7 @@
             android:layout_weight="1"
             android:text="Date Of Birth"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <Spinner
             android:id="@+id/daySpinner"
@@ -223,31 +216,32 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
-
     </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/permanent"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:src="@drawable/permanentworker"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/daily"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:src="@drawable/dailworker"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/permanent"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/permanentworker"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/daily"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/dailworker"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -273,16 +267,15 @@
             android:text="Permanent Workers"
             android:textColor="@color/white"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/submit"
         android:layout_width="237dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="S u b m i t"
-        android:textSize="20dp" />
-
-
+        android:text="Submit"
+        android:textSize="20dp"/>
 </LinearLayout>

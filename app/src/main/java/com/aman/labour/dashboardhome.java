@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class partnerregistration extends AppCompatActivity {
+public class dashboardhome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_partnerregistration);
+        setContentView(R.layout.activity_dashboardhome);
     }
 }
