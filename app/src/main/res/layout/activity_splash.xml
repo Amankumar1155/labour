@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@drawable/bg"
-    android:layout_height="match_parent"
-    tools:context=".splash">
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center"
-        android:text="Welcome..."
-        android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:id="@+id/update"
+        android:layout_width="212dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="188dp"
+        android:text="Welcome All Trad Solutions"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
     <ImageView
-        android:src="@drawable/logo"
-        android:layout_centerInParent="true"
+        android:id="@+id/gifImageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="218dp"
+        android:layout_below="@id/update"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="0dp" />
 
-</LinearLayout>
+
+
+
+</RelativeLayout>
