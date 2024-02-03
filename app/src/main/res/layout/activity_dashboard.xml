@@ -120,7 +120,7 @@
         app:shapeAppearanceOverlay="@style/roundedCorner"/>
 
     <Switch
-        android:background="#A5AEE3"
+        android:background="@drawable/custom_rounded_switch_bg"
         android:layout_width="401dp"
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
@@ -132,7 +132,8 @@
         android:switchTextAppearance="@style/CustomSwitchTextAppearance"
         android:text="I Am Available / Not"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 
 
