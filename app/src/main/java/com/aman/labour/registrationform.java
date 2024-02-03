@@ -18,7 +18,7 @@ public class registrationform extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(registrationform.this,dashboardhome.class));
+                startActivity(new Intent(registrationform.this,Dashboard.class));
                 finish();
             }
         });
