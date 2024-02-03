@@ -18,7 +18,9 @@
         android:theme="@style/Theme.Labour"
         tools:ignore="ExtraText"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
         <activity
             android:name=".dashboardhome"
             android:exported="false" />
@@ -28,7 +30,6 @@
         <activity
             android:name=".customerregisation"
             android:exported="false" />
-
         <activity
             android:name=".OtpVerification"
             android:exported="false" />
