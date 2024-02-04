@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="My Orders">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_pending"
+                    android:icon="@drawable/pending"
+                    android:title="Pending" />
+
+                <item
+                    android:id="@+id/nav_start"
+                    android:icon="@drawable/start"
+                    android:title="Start" />
+
+                <item
+                    android:id="@+id/nav_accept"
+                    android:icon="@drawable/accept"
+                    android:title="Accept" />
+
+                <item
+                    android:id="@+id/nav_rejected"
+                    android:icon="@drawable/pending"
+                    android:title="Rejected" />
+
+                <item
+                    android:id="@+id/nav_cancelled"
+                    android:icon="@drawable/start"
+                    android:title="Cancelled" />
+
+                <item
+                    android:id="@+id/nav_complete"
+                    android:icon="@drawable/accept"
+                    android:title="Completed" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/calling"
+                android:title="Call" />
+
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:title="Rate Us" />
+
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/gmail_icon"
+                android:title="Email" />
+        </menu>
+    </item>
+</menu>

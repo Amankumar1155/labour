@@ -2,9 +2,10 @@
     <item android:drawable="@drawable/roundeddashboard" android:top="-20dp" android:left="-20dp" android:right="-20dp"/>
     <item android:top="-20dp" android:left="-20dp" android:right="-20dp">
         <shape android:shape="rectangle">
-            <corners android:radius="90dp"></corners>
+            <corners android:radius="80dp"></corners>
             <corners android:topLeftRadius="70dp" android:topRightRadius="70dp"/>
             <solid android:color="@color/yellow"/>
         </shape>
+
     </item>
 </layer-list>

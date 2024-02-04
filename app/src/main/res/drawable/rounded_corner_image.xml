@@ -4,10 +4,12 @@
     android:shape="rectangle"
     android:thicknessRatio="8"
     android:useLevel="false" >
-    <solid android:color="@color/purple" />
+    <solid android:color="#FF5722" />
+
     <corners
-        android:bottomLeftRadius="22dp"
-        android:bottomRightRadius="22dp"
-        android:topLeftRadius="22dp"
-        android:topRightRadius="22dp" />
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp" />
 </shape>
+
