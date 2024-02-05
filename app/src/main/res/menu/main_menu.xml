@@ -36,11 +36,6 @@
                     android:title="Rejected" />
 
                 <item
-                    android:id="@+id/nav_cancelled"
-                    android:icon="@drawable/start"
-                    android:title="Cancelled" />
-
-                <item
                     android:id="@+id/nav_complete"
                     android:icon="@drawable/accept"
                     android:title="Completed" />
