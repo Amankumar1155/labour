@@ -4,9 +4,11 @@
     android:orientation="vertical"
     android:gravity="bottom"
     android:background="@color/yellow"
-    android:layout_height="200dp">
+    android:layout_height="220dp">
 
     <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:src="@drawable/logo" />
@@ -14,10 +16,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="All Trad Solutions"
         android:textSize="24sp" />
 
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="www.alltradsolutions.com"

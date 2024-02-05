@@ -6,17 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    fitsSystem
+    tools:openDrawer="start"
+    android:id="@+id/drawer_layout"
+    tools:ignore="HardcodedText"
     tools:context=".Dashboard">
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"/>
+
+
+
+
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+<!--
 <androidx.appcompat.widget.Toolbar
     android:background="@color/yellow"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content"/>-->
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -35,12 +50,12 @@
             android:id="@+id/imageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_corner_image"
             android:src="@drawable/aman" />
 
         <Button
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="170dp"
             android:layout_marginRight="20dp"
             android:text="Subscribe Now- To Get More Orders"
@@ -83,7 +98,7 @@
             android:text="LABOUR/ CAARPENTRE/elecdsffsdffdfsdfdsfdsdsfssdfdsdfsddfssdf etc"
             android:textColor="@color/black"
             android:textAlignment="center"
-           android:layout_marginTop="240dp"
+           android:layout_marginTop="200dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -154,7 +169,7 @@
                 android:textColor="@color/yellow"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:text="Rate AT Solutions"
+                android:text="Rate App play"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="570dp" />

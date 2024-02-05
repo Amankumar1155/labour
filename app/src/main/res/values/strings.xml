@@ -2,5 +2,7 @@
     <string name="app_name">Labour</string>
     <string name="s_u_b_m_i_t">S U B M I T</string>
 
+<string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
 
 </resources>
