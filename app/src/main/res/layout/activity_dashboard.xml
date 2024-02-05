@@ -150,6 +150,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="570dp" />
                 <Button
+                    android:id="@+id/customerrate"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/yellow"
                     android:layout_weight="1"

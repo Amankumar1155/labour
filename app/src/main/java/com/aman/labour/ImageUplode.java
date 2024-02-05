@@ -50,7 +50,7 @@ public class ImageUplode extends AppCompatActivity {
         uplodedbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ImageUplode.this, "Photos uploaded", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ImageUplode.this, "Photos uploaded:😊😊", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(ImageUplode.this, Dashboard.class);
                 startActivity(intent);
