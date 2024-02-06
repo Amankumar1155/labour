@@ -122,6 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="520dp" />
                 <Button
+                    android:id="@+id/ekycc"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/yellow"

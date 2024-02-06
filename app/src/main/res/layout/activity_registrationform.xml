@@ -140,10 +140,12 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/map"/>
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/map" />
     </LinearLayout>
 
     <RadioGroup
@@ -187,92 +189,53 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:text="Date of Birth : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
             android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:text="Date Of Birth"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-        <Spinner
-            android:id="@+id/daySpinner"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-        <Spinner
-            android:id="@+id/monthSpinner"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-        <Spinner
-            android:id="@+id/yearSpinner"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/permanent"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:src="@drawable/permanentworker"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp"/>
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/daily"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:src="@drawable/permanentworker"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_marginLeft="30dp"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:text="Daily Workers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:layout_marginLeft="50dp"
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Permanent Workers"
-            android:textColor="@color/white"
-            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/dateOfBirth"
+            android:inputType="date"
+            android:focusable="false"
+            android:background="#5676"
+            android:hint="dd/mm/yy"
+            android:drawableRight="@drawable/baseline_calendar_month_24"
             android:textStyle="bold"/>
+
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
 
     <Button
         android:id="@+id/submit"
@@ -282,5 +245,6 @@
         android:layout_marginTop="16dp"
         android:text="Submit"
         android:textSize="20dp"/>
+
 </LinearLayout>
 </ScrollView>
