@@ -35,6 +35,8 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+
+
         kyc = findViewById(R.id.ekycc);
         refer = findViewById(R.id.reffer);
         urllink = findViewById(R.id.rateplay);
@@ -67,11 +69,7 @@ public class Dashboard extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        navigationView.setNavigationItemSelectedListener(item -> {
-            // Handle navigation item clicks here
-            drawerLayout.closeDrawers(); // Close the drawer after item click
-            return true;
-        });
+
     }
 
     private void openGalleryForKYC() {
@@ -125,7 +123,10 @@ public class Dashboard extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+       if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+                int itemId = item.getItemId();
+
+
             return true;
         }
         return super.onOptionsItemSelected(item);

@@ -25,11 +25,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/black">
+
+        </androidx.appcompat.widget.Toolbar>
 
             <View
                 android:layout_width="match_parent"

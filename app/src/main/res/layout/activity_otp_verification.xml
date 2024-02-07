@@ -54,7 +54,7 @@
 
         <EditText
             android:id="@+id/e1"
-            android:background="@drawable/edit_background"
+
             android:maxLength="1"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -67,7 +67,7 @@
 
         <EditText
             android:id="@+id/e2"
-            android:background="@drawable/edit_background"
+
             android:maxLength="1"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -80,7 +80,7 @@
 
         <EditText
             android:id="@+id/e3"
-            android:background="@drawable/edit_background"
+
             android:maxLength="1"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -93,7 +93,7 @@
 
         <EditText
             android:id="@+id/e4"
-            android:background="@drawable/edit_background"
+
             android:maxLength="1"
             android:textAlignment="center"
 
