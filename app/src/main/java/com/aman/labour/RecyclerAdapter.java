@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    private ArrayList<Uri> uriArrayList; // Corrected type
+    private ArrayList<Uri> uriArrayList;
 
     public RecyclerAdapter(ArrayList<Uri> uriArrayList) {
         this.uriArrayList = uriArrayList;

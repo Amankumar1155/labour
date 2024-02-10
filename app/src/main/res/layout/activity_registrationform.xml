@@ -212,33 +212,8 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_margin="10dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Spinner
-            android:layout_marginTop="10dp"
-            android:id="@+id/category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Spinner
-            android:layout_marginTop="20dp"
-            android:id="@+id/services"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-
-    </LinearLayout>
-
-
-
-
-
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/regsubmitt"
         android:layout_width="237dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

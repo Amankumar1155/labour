@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="12dp"
-    tools:context=".Select_service">
+    tools:context=".Sub_category">
 
 
     <LinearLayout
@@ -18,13 +18,13 @@
             android:textSize="18sp"
             android:textColor="@color/black"
             android:textAlignment="center"
-            android:text="Please Select Work"
+            android:text="Please Select Sub-Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/gridRecyclerView"
+            android:id="@+id/subRecyclerView"
             android:layout_margin="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

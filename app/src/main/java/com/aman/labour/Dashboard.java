@@ -20,11 +20,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity {
-    Button refer, urllink, rate, kyc;
+    Button refer, urllink, rate, kyc, whatsappp;
     Button btn;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
+    private ActionBarDrawerToggle drawerToggle;
 
     private static final int REQUEST_CODE_PICK_IMAGES = 100;
     private boolean isKYCCompleted = false; // Flag to track KYC completion
@@ -36,11 +37,12 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
 
-
+        whatsappp=findViewById(R.id.nav_whatsapp);
         kyc = findViewById(R.id.ekycc);
         refer = findViewById(R.id.reffer);
         urllink = findViewById(R.id.rateplay);
         rate = findViewById(R.id.customerrate);
+
 
         btn = findViewById(R.id.uplodebtn1);
         btn.setOnClickListener(v -> {
@@ -61,13 +63,18 @@ public class Dashboard extends AppCompatActivity {
         });
 
         drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
 
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
+        NavigationView navigationViews = findViewById(R.id.nav_view);
+        View headerView = navigationViews.getHeaderView(0);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        drawerToggle = new ActionBarDrawerToggle(
+                this,
+                drawerLayout,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close
+        );
+
 
 
     }
@@ -84,9 +91,8 @@ public class Dashboard extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == REQUEST_CODE_PICK_IMAGES && resultCode == RESULT_OK) {
-            // Handle selected images for KYC
-            // Add your logic here
-            isKYCCompleted = true; // Set KYC completion flag
+
+            isKYCCompleted = true;
             Toast.makeText(this, "KYC done successfully! 😊", Toast.LENGTH_SHORT).show();
         }
     }
@@ -125,8 +131,6 @@ public class Dashboard extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
                 int itemId = item.getItemId();
-
-
             return true;
         }
         return super.onOptionsItemSelected(item);

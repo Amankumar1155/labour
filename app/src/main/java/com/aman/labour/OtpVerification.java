@@ -24,7 +24,7 @@ public class OtpVerification extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(OtpVerification.this,registrationform.class));
+                startActivity(new Intent(OtpVerification.this,Select_service.class));
                 finish();
             }
         });

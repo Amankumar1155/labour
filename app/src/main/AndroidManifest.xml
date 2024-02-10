@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -25,6 +24,9 @@
         android:theme="@style/Theme.Labour"
         tools:ignore="ExtraText"
         tools:targetApi="31">
+        <activity
+            android:name=".Sub_category"
+            android:exported="false" />
         <activity
             android:name=".Select_service"
             android:exported="false" />

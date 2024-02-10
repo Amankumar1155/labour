@@ -219,6 +219,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/regsubmit"
         android:layout_width="237dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -2,30 +2,11 @@
     <string name="app_name">Labour</string>
     <string name="s_u_b_m_i_t">S U B M I T</string>
 
+    <string name="navigation_drawer_close">Open Navigation Drawer</string>
+    <string name="navigation_drawer_open">Close Navigation Drawer</string>
+
     <string name="open">Open Navigation Drawer</string>
     <string name="close">Close Navigation Drawer</string>
 
-    <string-array name="service_category">
-        <item>Service Types</item>
-        <item></item>
-        <item>Permanant Worker</item>
-    </string-array>
-
-    <string-array name="Services">
-        <item>Select Service</item>
-
-    </string-array>
-
-    <string-array name="daily_worker_services">
-        <item>Daily Worker Services</item>
-        <item>Cook</item>
-        <item>Aman</item>
-    </string-array>
-
-    <string-array name="permanant_worker_services">
-        <item>Permanant Worker Services</item>
-        <item>Mango</item>
-        <item>Banana</item>
-    </string-array>
 
 </resources>

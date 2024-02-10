@@ -8,25 +8,23 @@ import android.os.Bundle;
 
 import com.aman.labour.Adapter.ServiceAdapter;
 
-public class Select_service extends AppCompatActivity {
+public class Sub_category extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    RecyclerView subRecycler;
 
-    String names[]={"Ram","Shyam"};
+    String names[]={"chachi","chacha"};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_service);
+        setContentView(R.layout.activity_sub_category);
 
-        recyclerView=findViewById(R.id.gridRecyclerView);
+        subRecycler=findViewById(R.id.subRecyclerView);
 
         ServiceAdapter adapter =new ServiceAdapter(names,this);
 
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
-        recyclerView.setAdapter(adapter);
-
-
+        subRecycler.setLayoutManager(new GridLayoutManager(this,2));
+        subRecycler.setAdapter(adapter);
     }
 }
