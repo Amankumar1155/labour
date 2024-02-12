@@ -1,6 +1,7 @@
 package com.aman.labour;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
@@ -16,6 +17,7 @@ import android.widget.Spinner;
 
 public class registrationform extends AppCompatActivity {
     Button  btn;
+
     Spinner sp1,sp2;
     EditText dob;
     int date,month,year;
@@ -29,6 +31,8 @@ public class registrationform extends AppCompatActivity {
         btn = findViewById(R.id.regsubmitt);
         dob = findViewById(R.id.dateOfBirth);
 
+
+
         dob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,10 +43,12 @@ public class registrationform extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(registrationform.this, Dashboard.class));
+                startActivity(new Intent(registrationform.this, Kycprocess.class));
                 finish();
             }
         });
+
+
 
     }
         DatePickerDialog.OnDateSetListener listener = new DatePickerDialog.OnDateSetListener() {

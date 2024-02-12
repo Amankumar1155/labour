@@ -25,6 +25,9 @@
         tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".Kycprocess"
+            android:exported="false" />
+        <activity
             android:name=".Sub_category"
             android:exported="false" />
         <activity
