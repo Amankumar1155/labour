@@ -10,22 +10,22 @@
     tools:context=".Kycprocess">
 
     <TextView
-        android:layout_margin="5dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_margin="15dp"
         android:hint="Please Uplode the documents and make sure they are clear and easy to read."
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
         <androidx.cardview.widget.CardView
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/white"
             android:layout_weight="1">
 
             <ImageView
@@ -40,18 +40,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Uplode Your Profile Picture"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/white"
             android:layout_weight="1"
             >
 
@@ -67,17 +67,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Uplode Your Adhaar Card Front Image"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
         </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
+        android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_margin="8dp"
         app:cardCornerRadius="12dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         android:layout_weight="1"
         >
 
@@ -93,9 +93,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Uplode Your Adhaar Card Back Image"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -103,20 +102,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="5dp"
+        android:layout_margin="15dp"
         android:hint="Note:- Your documents will only be used to handle your request and will be store securely."
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/docsubmit"
         android:layout_gravity="right"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_margin="8dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="0.7"
         android:backgroundTint="@color/black"
         app:cardCornerRadius="12dp">
 
@@ -124,11 +122,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SUBMIT"
+            android:text="S U B M I T"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="16sp"
+            android:textStyle="" />
 
 
     </androidx.cardview.widget.CardView>
