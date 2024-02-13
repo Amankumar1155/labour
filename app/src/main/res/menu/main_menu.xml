@@ -12,33 +12,17 @@
             android:title="Profile" />
     </group>
 
-    <item android:title="My Orders">
+    <item android:title="Reffer | Rating">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_pending"
                     android:icon="@drawable/pending"
-                    android:title="Pending" />
-
+                    android:title="Rate Us App" />
                 <item
                     android:id="@+id/nav_start"
                     android:icon="@drawable/start"
-                    android:title="Start" />
-
-                <item
-                    android:id="@+id/nav_accept"
-                    android:icon="@drawable/accept"
-                    android:title="Accept" />
-
-                <item
-                    android:id="@+id/nav_rejected"
-                    android:icon="@drawable/pending"
-                    android:title="Rejected" />
-
-                <item
-                    android:id="@+id/nav_complete"
-                    android:icon="@drawable/accept"
-                    android:title="Completed" />
+                    android:title="Reffer For Friends" />
             </group>
         </menu>
     </item>

@@ -25,6 +25,9 @@
         tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".Workorders"
+            android:exported="false" />
+        <activity
             android:name=".Forgottpage"
             android:exported="false" />
         <activity
