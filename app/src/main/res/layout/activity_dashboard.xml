@@ -10,9 +10,6 @@ xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
-
-
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -157,6 +154,7 @@ xmlns:tools="http://schemas.android.com/tools"
                             android:layout_height="wrap_content">
 
                             <androidx.cardview.widget.CardView
+                                android:id="@+id/workorder"
                                 android:clickable="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="150dp"
@@ -165,7 +163,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:layout_gravity="center"
                                 app:cardCornerRadius="12dp"
                                 android:layout_weight="1"
-                                >
+                                tools:ignore="InvalidId">
                                 <RelativeLayout
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
@@ -181,7 +179,7 @@ xmlns:tools="http://schemas.android.com/tools"
 
                                     <TextView
                                         android:id="@+id/pendingwork"
-                                        android:text="Pending Work"
+                                        android:text="Work Order"
                                         android:textSize="18sp"
                                         android:textColor="@color/white"
                                         android:layout_centerHorizontal="true"
@@ -189,13 +187,8 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/card1"
                                         />
-
-
                                 </RelativeLayout>
-
                             </androidx.cardview.widget.CardView>
-
-
                             <androidx.cardview.widget.CardView
                                 android:clickable="true"
                                 android:layout_width="match_parent"
@@ -228,21 +221,9 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/card2"
                                         />
-
-
                                 </RelativeLayout>
-
                             </androidx.cardview.widget.CardView>
-
-
-
                         </LinearLayout>
-
-
-
-
-
-
                         <LinearLayout
                             android:orientation="horizontal"
                             android:padding="12dp"
@@ -263,7 +244,6 @@ xmlns:tools="http://schemas.android.com/tools"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-
                                     <ImageView
                                         android:id="@+id/card3"
                                         android:src="@drawable/accepted"
@@ -271,23 +251,16 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_width="100dp"
                                         android:layout_height="80dp"
                                         />
-
                                     <TextView
-
                                         android:text="Accepted Work"
                                         android:textSize="18sp"
                                         android:textColor="@color/white"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/card3"
-                                        />
-
-
+                                        android:layout_below="@+id/card3" />
                                 </RelativeLayout>
-
                             </androidx.cardview.widget.CardView>
-
                             <androidx.cardview.widget.CardView
                                 android:clickable="true"
                                 android:layout_width="match_parent"
@@ -296,21 +269,17 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:layout_margin="8dp"
                                 android:layout_gravity="center"
                                 app:cardCornerRadius="12dp"
-                                android:layout_weight="1"
-                                >
+                                android:layout_weight="1">
                                 <RelativeLayout
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-
                                     <ImageView
                                         android:id="@+id/card4"
                                         android:src="@drawable/rejected"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="100dp"
-                                        android:layout_height="80dp"
-                                        />
-
+                                        android:layout_height="80dp" />
                                     <TextView
                                         android:text="Rejected Work"
                                         android:textSize="18sp"
@@ -318,18 +287,10 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/card4"
-                                        />
-
-
+                                        android:layout_below="@+id/card4" />
                                 </RelativeLayout>
-
                             </androidx.cardview.widget.CardView>
-
-
                         </LinearLayout>
-
-
                         <LinearLayout
                             android:orientation="horizontal"
                             android:padding="12dp"
@@ -350,15 +311,12 @@ xmlns:tools="http://schemas.android.com/tools"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-
                                     <ImageView
                                         android:id="@+id/card5"
                                         android:src="@drawable/cancelled"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="100dp"
-                                        android:layout_height="80dp"
-                                        />
-
+                                        android:layout_height="80dp" />
                                     <TextView
                                         android:text="Cancelled"
                                         android:textSize="18sp"
@@ -366,14 +324,9 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/card5"
-                                        />
-
-
+                                        android:layout_below="@+id/card5" />
                                 </RelativeLayout>
-
                             </androidx.cardview.widget.CardView>
-
                             <androidx.cardview.widget.CardView
                                 android:clickable="true"
                                 android:layout_width="match_parent"
@@ -388,7 +341,6 @@ xmlns:tools="http://schemas.android.com/tools"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-
                                     <ImageView
                                         android:id="@+id/card6"
                                         android:src="@drawable/completee"
@@ -396,7 +348,6 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_width="100dp"
                                         android:layout_height="80dp"
                                         />
-
                                     <TextView
                                         android:text="Completed"
                                         android:textSize="18sp"
@@ -404,18 +355,10 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/card6"
-                                        />
-
-
+                                        android:layout_below="@+id/card6" />
                                 </RelativeLayout>
-
                             </androidx.cardview.widget.CardView>
-
-
                         </LinearLayout>
-
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -434,17 +377,11 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:id="@+id/switchButton"
                                 android:layout_gravity="left"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content"
+                                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
                         </LinearLayout>
-
-
-
-
                     </LinearLayout>
-
-
-
         </FrameLayout>
 
     </RelativeLayout>

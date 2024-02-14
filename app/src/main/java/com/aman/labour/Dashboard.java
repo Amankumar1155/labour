@@ -17,20 +17,20 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity {
+    CardView card1;
 
-ImageView imageView;
+    ImageView imageView;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
     private ActionBarDrawerToggle drawerToggle;
 
-    private static final int REQUEST_CODE_PICK_IMAGES = 100;
-    private boolean isKYCCompleted = false; // Flag to track KYC completion
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
@@ -39,9 +39,8 @@ ImageView imageView;
         setContentView(R.layout.activity_dashboard);
 
 
-
+        card1=findViewById(R.id.workorder);
         drawerLayout = findViewById(R.id.drawer_layout);
-
         NavigationView navigationViews = findViewById(R.id.nav_view);
         View headerView = navigationViews.getHeaderView(0);
 
@@ -77,6 +76,15 @@ ImageView imageView;
                 if (!drawerLayout.isDrawerOpen(navigationView)) {
                     drawerLayout.openDrawer(navigationView);
                 }
+            }
+        });
+
+        card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Dashboard.this, Workordercard.class));
+                finish();
+
             }
         });
 
