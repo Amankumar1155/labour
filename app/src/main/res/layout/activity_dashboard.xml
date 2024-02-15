@@ -4,7 +4,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="5dp"
-    android:background="@drawable/bg1"
+    android:background="@color/user"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,8 +29,7 @@ xmlns:tools="http://schemas.android.com/tools"
             android:layout_height="?attr/actionBarSize"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:background="@color/black">
+            android:layout_alignParentEnd="true">
 
 
 
@@ -49,7 +48,7 @@ xmlns:tools="http://schemas.android.com/tools"
                     android:layout_gravity="left"
                     android:layout_margin="5dp"
                     android:background="@drawable/baseline_density_medium_24"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="@color/black"
                     />
 
                 <TextView
@@ -59,7 +58,7 @@ xmlns:tools="http://schemas.android.com/tools"
                     android:textAlignment="center"
                     android:gravity="center"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
 
@@ -92,6 +91,7 @@ xmlns:tools="http://schemas.android.com/tools"
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
+                                android:background="#E8DB86"
                                 android:layout_height="match_parent">
 
                                 <ImageView
@@ -112,7 +112,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     android:layout_marginStart="32dp"
                                     android:layout_marginTop="32dp"
                                     android:text="Good Marning"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="22sp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="16dp"
                                     android:text="Mr. Aman"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="24sp"
                                     android:textStyle="bold"
                                     app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -134,7 +134,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Category Electrician"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="24sp"
                                     android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -142,9 +142,19 @@ xmlns:tools="http://schemas.android.com/tools"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
+
                         </LinearLayout>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="Active"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
 
 
                         <LinearLayout
@@ -158,7 +168,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:clickable="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="150dp"
-                                android:backgroundTint="@color/black"
+                                android:backgroundTint="@color/white"
                                 android:layout_margin="8dp"
                                 android:layout_gravity="center"
                                 app:cardCornerRadius="12dp"
@@ -178,10 +188,9 @@ xmlns:tools="http://schemas.android.com/tools"
                                         tools:ignore="DuplicateIds" />
 
                                     <TextView
-                                        android:id="@+id/pendingwork"
                                         android:text="Work Order"
                                         android:textSize="18sp"
-                                        android:textColor="@color/white"
+                                        android:textColor="@color/black"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -200,6 +209,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:layout_weight="1"
                                 >
                                 <RelativeLayout
+                                    android:background="@color/white"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
@@ -215,7 +225,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     <TextView
                                         android:text="Started Work"
                                         android:textSize="18sp"
-                                        android:textColor="@color/white"
+                                        android:textColor="@color/black"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -241,6 +251,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:layout_weight="1"
                                 >
                                 <RelativeLayout
+                                    android:background="@color/white"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
@@ -254,7 +265,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     <TextView
                                         android:text="Accepted Work"
                                         android:textSize="18sp"
-                                        android:textColor="@color/white"
+                                        android:textColor="@color/black"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -271,6 +282,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 app:cardCornerRadius="12dp"
                                 android:layout_weight="1">
                                 <RelativeLayout
+                                    android:background="@color/white"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
@@ -283,7 +295,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     <TextView
                                         android:text="Rejected Work"
                                         android:textSize="18sp"
-                                        android:textColor="@color/white"
+                                        android:textColor="@color/black"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -308,6 +320,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:layout_weight="1"
                                 >
                                 <RelativeLayout
+                                    android:background="@color/white"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
@@ -320,7 +333,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     <TextView
                                         android:text="Cancelled"
                                         android:textSize="18sp"
-                                        android:textColor="@color/white"
+                                        android:textColor="@color/black"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -338,6 +351,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 android:layout_weight="1"
                                 >
                                 <RelativeLayout
+                                    android:background="@color/white"
                                     android:padding="20dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
@@ -351,7 +365,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                     <TextView
                                         android:text="Completed"
                                         android:textSize="18sp"
-                                        android:textColor="@color/white"
+                                        android:textColor="@color/black"
                                         android:layout_centerHorizontal="true"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -361,6 +375,8 @@ xmlns:tools="http://schemas.android.com/tools"
                         </LinearLayout>
 
                         <LinearLayout
+                            android:background="@color/green"
+                            android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 

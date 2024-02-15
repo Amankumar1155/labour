@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/bg1"
+    android:background="@color/user"
     android:layout_width="wrap_content"
     android:layout_margin="10dp"
     android:id="@+id/card_second"
@@ -19,6 +19,7 @@
 
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/textView"
             android:textSize="20sp"
             android:textAlignment="center"

@@ -11,6 +11,14 @@ public class Kycprocess extends AppCompatActivity {
 
     CardView btn1;
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, registrationform.class));
+        finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -22,6 +22,12 @@ public class registrationform extends AppCompatActivity {
     EditText dob;
     int date,month,year;
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, Select_service.class));
+        finish();
+    }
 
     @SuppressLint("MissingInflatedId")
     @Override

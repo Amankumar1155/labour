@@ -15,6 +15,14 @@ public class OtpVerification extends AppCompatActivity {
     EditText e1, e2, e3, e4;
     Button submit;
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
+    }
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +36,9 @@ public class OtpVerification extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
 
 
     }

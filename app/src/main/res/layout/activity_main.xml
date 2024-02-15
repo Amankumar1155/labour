@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@color/user"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -18,7 +18,7 @@
 
     <TextView
         android:text="All Trad Solutions"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:textSize="18sp"
@@ -31,7 +31,7 @@
     android:layout_marginLeft="20dp"
     android:text="Login | SignUp"
     android:textSize="25sp"
-    android:textColor="@color/white"
+    android:textColor="@color/black"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 
@@ -66,7 +66,7 @@
 <TextView
     android:text="By processing, you consent to the Terms and Conditions "
     android:textSize="13sp"
-    android:textColor="@color/white"
+    android:textColor="@color/black"
     android:layout_gravity="center"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -78,13 +78,14 @@
     <TextView
         android:text="specified on our plateform"
         android:textSize="13sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:clickable="true"
+        android:textStyle="bold"
         android:id="@+id/Loginpage"
         android:text="Login Here"
         android:textSize="15sp"
@@ -102,7 +103,7 @@
 
     <TextView
         android:text="Any Help Contact Us :"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
@@ -125,6 +126,7 @@
     <TextView
         android:id="@+id/websiteurl"
         android:text="Visit Website"
+        android:textStyle="bold"
         android:clickable="true"
         android:textSize="15sp"
         android:layout_marginTop="15dp"

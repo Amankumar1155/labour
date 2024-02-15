@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+
     Button btn;
     TextView btn1;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn1=findViewById(R.id.Loginpage);
         btn=findViewById(R.id.btn_continue);
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

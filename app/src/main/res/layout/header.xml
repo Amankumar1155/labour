@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="bottom"
-    android:background="@color/yellow"
+    android:background="@color/user"
     android:layout_height="220dp">
 
     <ImageView

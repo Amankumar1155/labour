@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/user">
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
@@ -12,12 +14,24 @@
             android:title="Profile" />
     </group>
 
+    <item android:title="Your Wallet">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/bank"
+                    android:icon="@drawable/wallet"
+                    android:title="My Wallet" />
+            </group>
+        </menu>
+    </item>
+
+
     <item android:title="Reffer | Rating">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_pending"
-                    android:icon="@drawable/pending"
+                    android:icon="@drawable/rateus"
                     android:title="Rate Us App" />
                 <item
                     android:id="@+id/nav_start"

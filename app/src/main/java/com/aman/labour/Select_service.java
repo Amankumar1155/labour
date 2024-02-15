@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.aman.labour.Adapter.ServiceAdapter;
@@ -14,6 +15,12 @@ public class Select_service extends AppCompatActivity {
 
     String names[]={"Ram","Shyam"};
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, OtpVerification.class));
+        finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

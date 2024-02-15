@@ -24,25 +24,37 @@ import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity {
     CardView card1;
+    Button btn1,btn2;
 
-    ImageView imageView;
+    ImageView imageView ;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
-    NavigationView navigationView;
+    NavigationView navigationView, wallet;
     private ActionBarDrawerToggle drawerToggle;
 
 
-    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, Kycprocess.class));
+        finish();
+    }
+
+    @SuppressLint({"WrongViewCast", "MissingInflatedId", "CutPasteId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
 
+
+
         card1=findViewById(R.id.workorder);
         drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationViews = findViewById(R.id.nav_view);
         View headerView = navigationViews.getHeaderView(0);
+
+
 
         drawerLayout = findViewById(R.id.drawer_layout);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open,
@@ -51,6 +63,7 @@ public class Dashboard extends AppCompatActivity {
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
+        wallet=findViewById(R.id.bank);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
