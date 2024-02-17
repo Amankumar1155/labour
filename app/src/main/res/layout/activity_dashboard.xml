@@ -90,8 +90,8 @@ xmlns:tools="http://schemas.android.com/tools"
                             tools:layout_editor_absoluteX="8dp" >
 
                             <androidx.constraintlayout.widget.ConstraintLayout
+                                android:background="@drawable/roundedwhitedash"
                                 android:layout_width="match_parent"
-                                android:background="#E8DB86"
                                 android:layout_height="match_parent">
 
                                 <ImageView
@@ -303,6 +303,7 @@ xmlns:tools="http://schemas.android.com/tools"
                                 </RelativeLayout>
                             </androidx.cardview.widget.CardView>
                         </LinearLayout>
+
                         <LinearLayout
                             android:orientation="horizontal"
                             android:padding="12dp"
@@ -372,29 +373,100 @@ xmlns:tools="http://schemas.android.com/tools"
                                         android:layout_below="@+id/card6" />
                                 </RelativeLayout>
                             </androidx.cardview.widget.CardView>
+
+
                         </LinearLayout>
 
+
+
                         <LinearLayout
+                            android:orientation="horizontal"
+                            android:padding="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:backgroundTint="@color/black"
+                                android:layout_margin="8dp"
+                                android:layout_gravity="center"
+                                app:cardCornerRadius="12dp"
+                                android:layout_weight="1"
+                                >
+                                <RelativeLayout
+                                    android:background="@color/white"
+                                    android:padding="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:id="@+id/card7"
+                                        android:src="@drawable/workimg"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="100dp"
+                                        android:layout_height="80dp" />
+                                    <TextView
+                                        android:text="Work Image"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/black"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/card7" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:backgroundTint="@color/black"
+                                android:layout_margin="8dp"
+                                android:layout_gravity="center"
+                                app:cardCornerRadius="12dp"
+                                android:layout_weight="1"
+                                >
+                                <RelativeLayout
+                                    android:background="@color/white"
+                                    android:padding="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:id="@+id/card8"
+                                        android:src="@drawable/productimg"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="100dp"
+                                        android:layout_height="80dp"
+                                        />
+                                    <TextView
+                                        android:text="Product Image"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/black"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/card8" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:backgroundTint="@color/btn"
                             android:background="@color/green"
                             android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <TextView
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:layout_width="wrap_content"
-                                android:backgroundTint="@color/btn"
-                                android:layout_height="match_parent"
-                                android:hint=" I am Avilable "
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
 
                             <Switch
                                 android:id="@+id/switchButton"
-                                android:layout_gravity="left"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:text="Today I am Working"
+                                android:textSize="20sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:background="@drawable/rounded_switch"
                                 tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
                         </LinearLayout>
@@ -408,7 +480,6 @@ xmlns:tools="http://schemas.android.com/tools"
 </LinearLayout>
 
 
-<!-- The navigation drawer -->
 <com.google.android.material.navigation.NavigationView
     android:id="@+id/nav_view"
     android:layout_width="wrap_content"

@@ -87,6 +87,7 @@
 
             <androidx.cardview.widget.CardView
                 app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/btn"
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
@@ -97,6 +98,7 @@
                     android:id="@+id/rechargeTextView"
                     android:layout_gravity="center"
                     android:text="Recharge Here"
+                    android:textColor="@color/black"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -107,6 +109,7 @@
 
             <androidx.cardview.widget.CardView
                 app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/btn"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
@@ -116,6 +119,7 @@
                     android:id="@+id/textView"
                     android:layout_gravity="center"
                     android:text="Spend amount"
+                    android:textColor="@color/black"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold"

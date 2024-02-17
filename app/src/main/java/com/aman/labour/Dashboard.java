@@ -69,8 +69,11 @@ public class Dashboard extends AppCompatActivity {
 
             if (itemId == R.id.nav_home)
             {
-                Toast.makeText(this, "This is home", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Dashboard.this,Dashboard.class));
+                finish();
+
             } else if (itemId==R.id.nav_profile)
+
             {
                 startActivity(new Intent(Dashboard.this,EditProfile.class));
                 finish();

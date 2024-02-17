@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"/>
 
         <ImageView
-            android:id="@+id/callclick"
+            android:id="@+id/callbtn"
             android:layout_marginLeft="20dp"
             android:src="@drawable/call"
             android:layout_width="30dp"
@@ -109,7 +109,7 @@
             tools:ignore="InvalidId" />
 
         <ImageView
-            android:id="@+id/whatsapclick"
+            android:id="@+id/whatsappbtn"
             android:src="@drawable/whatsapp"
             android:layout_width="50dp"
             android:layout_marginLeft="20dp"

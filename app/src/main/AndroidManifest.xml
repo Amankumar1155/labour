@@ -4,24 +4,22 @@
 
 
 
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
     <uses-feature android:name="android.hardware.camera" />
-
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:hardwareAccelerated="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -29,75 +27,32 @@
         android:theme="@style/Theme.Labour"
         tools:ignore="ExtraText"
         tools:targetApi="31">
-        <activity
-            android:name=".EditProfile"
-            android:exported="false" />
-        <activity
-            android:name=".Webview"
-            android:exported="false" />
-        <activity
-            android:name=".Wallet"
-            android:exported="false" />
-        <activity
-            android:name=".Workordercard"
-            android:exported="false" />
-        <activity
-            android:name=".Workorders"
-            android:exported="false" />
-        <activity
-            android:name=".Forgottpage"
-            android:exported="false" />
-        <activity
-            android:name=".Loginpage"
-            android:exported="false" />
-        <activity
-            android:name=".Kycprocess"
-            android:exported="false" />
-        <activity
-            android:name=".Sub_category"
-            android:exported="false" />
-        <activity
-            android:name=".Select_service"
-            android:exported="false" />
-        <activity
-            android:name=".Service_types"
-            android:exported="false" />
-        <activity
-            android:name=".Details"
-            android:exported="false" />
-        <activity
-            android:name=".Service_type"
-            android:exported="false" />
-        <activity
-            android:name=".ImageUplode"
-            android:exported="false" />
-        <activity
-            android:name=".Workuplodeimages"
-            android:exported="false" />
-        <activity
-            android:name=".Dashboard"
-            android:exported="false" />
-        <activity
-            android:name=".dashboardhome"
-            android:exported="false" />
-        <activity
-            android:name=".registrationform"
-            android:exported="false" />
-        <activity
-            android:name=".customerregisation"
-            android:exported="false" />
-        <activity
-            android:name=".OtpVerification"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".splash"
-            android:exported="true">
+
+        <!-- Order activities alphabetically -->
+        <activity android:name=".Dashboard" android:exported="false" />
+        <activity android:name=".Details" android:exported="false" />
+        <activity android:name=".EditProfile" android:exported="false" />
+        <activity android:name=".Forgottpage" android:exported="false" />
+        <activity android:name=".ImageUplode" android:exported="false" />
+        <activity android:name=".Kycprocess" android:exported="false" />
+        <activity android:name=".Loginpage" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".OtpVerification" android:exported="false" />
+        <activity android:name=".Select_service" android:exported="false" />
+        <activity android:name=".Service_type" android:exported="false" />
+        <activity android:name=".Service_types" android:exported="false" />
+        <activity android:name=".Sub_category" android:exported="false" />
+        <activity android:name=".Webview" android:exported="false" />
+        <activity android:name=".Wallet" android:exported="false" />
+        <activity android:name=".Workordercard" android:exported="false" />
+        <activity android:name=".Workorders" android:exported="false" />
+        <activity android:name=".Workuplodeimages" android:exported="false" />
+        <activity android:name=".customerregisation" android:exported="false" />
+        <activity android:name=".dashboardhome" android:exported="false" />
+        <activity android:name=".registrationform" android:exported="false" />
+        <activity android:name=".splash" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

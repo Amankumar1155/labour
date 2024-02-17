@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     private void showCallConfirmationDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("Confirm Call");
-        builder.setMessage("Are you sure you want to call 7398869340?");
+        builder.setMessage("Are you sure you want to call 7398869340");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, "Call canceled", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Call Permisson Denied", Toast.LENGTH_SHORT).show();
             }
         });
         builder.show();
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             Intent dial = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(dial);
         } else {
-            // Request the CALL_PHONE permission at runtime
+
             requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, 1);
         }
     }
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     private void showWhatsAppConfirmationDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("Confirm WhatsApp Message");
-        builder.setMessage("Do you want to send a WhatsApp message?");
+        builder.setMessage("Do you want to send a WhatsApp message");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -114,17 +114,17 @@ public class MainActivity extends AppCompatActivity {
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, "WhatsApp message canceled", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "WhatsApp Permisson Denied", Toast.LENGTH_SHORT).show();
             }
         });
         builder.show();
     }
 
     private void sendWhatsAppMessage() {
-        String phoneNumber = "7398869340"; // Replace with the recipient's phone number
-        String message = "Hi!"; // Replace with the desired message
+        String phoneNumber = "7398869340";
+        String message = "Hi!";
 
-        // Using Uri.parse to open WhatsApp directly
+
         Uri uri = Uri.parse("https://wa.me/" + phoneNumber + "?text=" + Uri.encode(message));
         Intent sendIntent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(sendIntent);
