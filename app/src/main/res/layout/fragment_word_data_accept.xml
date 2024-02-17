@@ -12,9 +12,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
-
-
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -77,7 +74,7 @@
                     android:layout_weight="1"
                     android:padding="5dp"
                     android:textStyle="bold"
-                    android:text="Order No:-63456455463"
+                    android:text="Work ID:-634564596"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -88,12 +85,11 @@
                     android:textStyle="bold"
                     android:padding="5dp"
                     android:layout_weight="1"
-                    android:text="21/09/202424 10:00 AM"
+                    android:text="21/09/202410:00 AM"
                     android:layout_toEndOf="@+id/orderNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/horizLinearLayout"
@@ -212,6 +208,8 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:hint="Cancell"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="InvalidId" />
@@ -221,6 +219,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:hint="Accept"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

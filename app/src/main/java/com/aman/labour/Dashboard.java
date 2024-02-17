@@ -63,7 +63,6 @@ public class Dashboard extends AppCompatActivity {
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
-        wallet=findViewById(R.id.bank);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -73,7 +72,13 @@ public class Dashboard extends AppCompatActivity {
                 Toast.makeText(this, "This is home", Toast.LENGTH_SHORT).show();
             } else if (itemId==R.id.nav_profile)
             {
-                Toast.makeText(this, "This is profile", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Dashboard.this,EditProfile.class));
+                finish();
+            }
+            else if (itemId==R.id.wallet)
+            {
+                startActivity(new Intent(Dashboard.this,Wallet.class));
+                finish();
             }
 
             drawerLayout.closeDrawer(navigationView);
