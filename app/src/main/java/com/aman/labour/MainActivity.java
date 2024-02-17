@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        whatsap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showWhatsAppConfirmationDialog();
+            }
+        });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,8 +96,37 @@ public class MainActivity extends AppCompatActivity {
             Intent dial = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(dial);
         } else {
-
-            Toast.makeText(MainActivity.this, "Call permission not granted", Toast.LENGTH_SHORT).show();
+            // Request the CALL_PHONE permission at runtime
+            requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, 1);
         }
+    }
+
+    private void showWhatsAppConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle("Confirm WhatsApp Message");
+        builder.setMessage("Do you want to send a WhatsApp message?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                sendWhatsAppMessage();
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(MainActivity.this, "WhatsApp message canceled", Toast.LENGTH_SHORT).show();
+            }
+        });
+        builder.show();
+    }
+
+    private void sendWhatsAppMessage() {
+        String phoneNumber = "7398869340"; // Replace with the recipient's phone number
+        String message = "Hi!"; // Replace with the desired message
+
+        // Using Uri.parse to open WhatsApp directly
+        Uri uri = Uri.parse("https://wa.me/" + phoneNumber + "?text=" + Uri.encode(message));
+        Intent sendIntent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(sendIntent);
     }
 }

@@ -7,6 +7,13 @@ import android.os.Bundle;
 
 public class Forgottpage extends AppCompatActivity {
 
+
+
+
+
+
+
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();

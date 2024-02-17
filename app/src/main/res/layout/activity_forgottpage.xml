@@ -101,12 +101,15 @@
             android:layout_height="wrap_content"/>
 
         <ImageView
+            android:id="@+id/callclick"
             android:layout_marginLeft="20dp"
             android:src="@drawable/call"
             android:layout_width="30dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            tools:ignore="InvalidId" />
 
         <ImageView
+            android:id="@+id/whatsapclick"
             android:src="@drawable/whatsapp"
             android:layout_width="50dp"
             android:layout_marginLeft="20dp"
