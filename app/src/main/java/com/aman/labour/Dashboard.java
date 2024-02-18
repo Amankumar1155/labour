@@ -119,8 +119,8 @@ public class Dashboard extends AppCompatActivity {
             else if (itemId==R.id.Chatai)
 
             {
-                startActivity(new Intent(Dashboard.this,EditProfile.class));
-                finish();
+//                startActivity(new Intent(Dashboard.this,EditProfile.class));
+//                finish();
             }
 
             drawerLayout.closeDrawer(navigationView);

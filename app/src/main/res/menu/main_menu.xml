@@ -43,19 +43,26 @@
             <item
                 android:id="@+id/email"
                 android:icon="@drawable/gmail_icon"
-                android:title="Email" />
+                android:title="Email"/>
             <item
             android:id="@+id/Chatai"
             android:icon="@drawable/chatai"
-            android:title="Chat AI" />
+            android:title="Chat AI(Soon)" />
         </menu>
     </item>
     <item android:title="Account">
         <menu>
+
+            <item
+                android:id="@+id/policy"
+                android:icon="@drawable/privacy"
+                android:title="Privacy Policy" />
+
             <item
                 android:id="@+id/logout"
                 android:icon="@drawable/logout"
                 android:title="Logout" />
         </menu>
+
     </item>
 </menu>
