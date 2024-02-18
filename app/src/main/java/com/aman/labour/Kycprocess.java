@@ -1,15 +1,20 @@
 package com.aman.labour;
 
+
+
+
+import android.content.Intent;
+
+import android.os.Bundle;
+
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-
 public class Kycprocess extends AppCompatActivity {
 
-    CardView btn1;
+    CardView btn1, pic, adharfront, adharback;
 
 
     @Override
@@ -24,7 +29,10 @@ public class Kycprocess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kycprocess);
 
-        btn1=findViewById(R.id.docsubmit);
+        adharfront = findViewById(R.id.Adharfront);
+        adharback = findViewById(R.id.Adharback);
+        btn1 = findViewById(R.id.docsubmit);
+        pic = findViewById(R.id.imagebtn);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

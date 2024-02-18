@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.ContextCompat;
 
 public class Loginpage extends AppCompatActivity {
+    Button log;
     ImageView call, whatsapp;
     TextView btn;
 
@@ -28,15 +30,33 @@ public class Loginpage extends AppCompatActivity {
     }
 
 
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loginpage);
 
+
+        log=findViewById(R.id.Login_btn);
         call = findViewById(R.id.callbtn);
         whatsapp = findViewById(R.id.whatsappbtn);
         btn = findViewById(R.id.passreset);
+
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(Loginpage.this, Dashboard.class));
+                finish();
+            }
+
+
+        });
+
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

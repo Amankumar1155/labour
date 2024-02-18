@@ -25,6 +25,7 @@
         android:textSize="20sp" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/imagebtn"
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -51,6 +52,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/Adharfront"
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -77,6 +79,7 @@
 
         </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
+        android:id="@+id/Adharback"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="150dp"

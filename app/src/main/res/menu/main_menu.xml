@@ -27,11 +27,11 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_pending"
+                    android:id="@+id/rateapp"
                     android:icon="@drawable/rateus"
                     android:title="Rate Us App" />
                 <item
-                    android:id="@+id/nav_start"
+                    android:id="@+id/refferfriend"
                     android:icon="@drawable/start"
                     android:title="Reffer For Friends" />
             </group>
@@ -41,18 +41,13 @@
     <item android:title="Support">
         <menu>
             <item
-                android:id="@+id/nav_call"
-                android:icon="@drawable/call"
-                android:title="Call" />
-
-            <item
-                android:id="@+id/nav_whatsapp"
-                android:icon="@drawable/whatsapp_icon"
-                android:title="Whatsapp" />
-            <item
-                android:id="@+id/nav_email"
+                android:id="@+id/email"
                 android:icon="@drawable/gmail_icon"
                 android:title="Email" />
+            <item
+            android:id="@+id/Chatai"
+            android:icon="@drawable/chatai"
+            android:title="Chat AI" />
         </menu>
     </item>
     <item android:title="Account">

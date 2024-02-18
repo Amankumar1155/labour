@@ -1,20 +1,16 @@
 package com.aman.labour;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.content.ClipData;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -81,6 +77,49 @@ public class Dashboard extends AppCompatActivity {
             else if (itemId==R.id.wallet)
             {
                 startActivity(new Intent(Dashboard.this,Wallet.class));
+                finish();
+            }
+            else if (itemId==R.id.rateapp)
+            {
+                String url = "https://alltradsolutions.com/";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+            else if (itemId == R.id.refferfriend) {
+                String referralLink = "Your referral link here"; // Replace with your actual referral link
+                String shareMessage = "Check out this app: " + referralLink;
+
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Check out this app!");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+
+                startActivity(Intent.createChooser(shareIntent, "Share via"));
+
+                } else if (itemId == R.id.email) {
+                String email = "amanchaursiya1234@gmail.com";
+                String subject = "Hi!";
+                String body = "Hi!\nPlease assist me.";
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                emailIntent.setType("text/plain");
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                emailIntent.putExtra(Intent.EXTRA_TEXT, body);
+                emailIntent.setPackage("com.google.android.gm");
+
+                startActivity(emailIntent);
+            }
+            else if (itemId == R.id.logout) {
+                Toast.makeText(this, "You are logged out.📴📴", Toast.LENGTH_SHORT).show();
+                finish();
+
+                Intent intent = new Intent(this, Loginpage.class);
+                startActivity(intent);
+            }
+            else if (itemId==R.id.Chatai)
+
+            {
+                startActivity(new Intent(Dashboard.this,EditProfile.class));
                 finish();
             }
 
