@@ -20,7 +20,7 @@ public class Kycprocess extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(this, registrationform.class));
+        startActivity(new Intent(this, Registrationform.class));
         finish();
     }
 

@@ -12,8 +12,10 @@ import android.widget.Toast;
 
 public class OtpVerification extends AppCompatActivity {
 
-    EditText e1, e2, e3, e4;
+    EditText e1;
     Button submit;
+
+
 
     @Override
     public void onBackPressed() {
@@ -23,23 +25,31 @@ public class OtpVerification extends AppCompatActivity {
         finish();
     }
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_verification);
         submit=findViewById(R.id.otp_submit);
+
+
+        e1 = findViewById(R.id.otpEnter);
+
+
+        submit = findViewById(R.id.otp_submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(OtpVerification.this,Select_service.class));
+
+                String otpNumber=e1.getText().toString();
+                Toast.makeText(OtpVerification.this, "Your OTP :- "+otpNumber, Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(OtpVerification.this, Select_service.class);
+                startActivity(intent);
                 finish();
+
             }
         });
-
-
-
-
 
     }
 }

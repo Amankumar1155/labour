@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView call, whatsap;
     Button btn;
     TextView btn1, btn2;
+    EditText no;
+
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,11 +31,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
+        no=findViewById(R.id.contactNum);
         call = findViewById(R.id.calldailer);
         whatsap = findViewById(R.id.whatsaplaunch);
         btn2 = findViewById(R.id.websiteurl);
         btn1 = findViewById(R.id.Loginpage);
         btn = findViewById(R.id.btn_continue);
+
 
         call.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,14 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 showCallConfirmationDialog();
             }
         });
-
         whatsap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showWhatsAppConfirmationDialog();
             }
         });
-
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,8 +72,12 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, OtpVerification.class));
+                String otpNumber=no.getText().toString();
+                Toast.makeText(MainActivity.this, "Number is:- "+otpNumber, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, OtpVerification.class);
+                startActivity(intent);
                 finish();
+
             }
         });
     }
@@ -89,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.show();
     }
-
     private void makePhoneCall() {
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
             String phoneNumber = "tel:" + "7398869340";
@@ -100,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
             requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, 1);
         }
     }
-
     private void showWhatsAppConfirmationDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("Confirm WhatsApp Message");
@@ -119,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.show();
     }
-
     private void sendWhatsAppMessage() {
         String phoneNumber = "7398869340";
         String message = "Hi!";

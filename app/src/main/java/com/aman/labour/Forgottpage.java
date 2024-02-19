@@ -1,11 +1,15 @@
 package com.aman.labour;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -14,6 +18,9 @@ import androidx.appcompat.app.AlertDialog;
 public class Forgottpage extends AppCompatActivity {
     ImageView call, whatsapp;
 
+    EditText e1,e2;
+    Button log;
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -21,6 +28,8 @@ public class Forgottpage extends AppCompatActivity {
         finish();
     }
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +37,9 @@ public class Forgottpage extends AppCompatActivity {
 
         call = findViewById(R.id.callbtn);
         whatsapp = findViewById(R.id.whatsappbtn);
+        log=findViewById(R.id.Login_btn);
+        e1=findViewById(R.id.newpass);
+        e2=findViewById(R.id.renewpass);
 
         call.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +47,24 @@ public class Forgottpage extends AppCompatActivity {
                 showCallConfirmationDialog();
             }
         });
+
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String id = e1.getText().toString();
+                String pass = e2.getText().toString();
+                Toast.makeText(Forgottpage.this, "Password is :- "+id, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Forgottpage.this, "Password is:- "+pass, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Forgottpage.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
+
+
+
 
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override

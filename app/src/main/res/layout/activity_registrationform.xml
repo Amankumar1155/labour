@@ -6,7 +6,10 @@
     android:layout_width="match_parent"
     android:background="@color/user"
     android:layout_margin="5dp"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Registrationform">
+
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,7 +30,19 @@
         android:layout_height="1dp"
         android:background="#ACA1A1"
         android:layout_gravity="center"
-        android:layout_marginTop="2dp"/>
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circular_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -37,7 +52,9 @@
         android:layout_marginTop="10dp">
 
 
+
         <EditText
+            android:id="@+id/nameenter"
             android:hint="Name..."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -53,6 +70,7 @@
 
 
         <EditText
+            android:id="@+id/enteremail"
             android:hint="Email..."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -70,9 +88,11 @@
 
 
         <EditText
+            android:id="@+id/enteradd"
             android:hint="Address..."
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            tools:ignore="InvalidId" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,6 +109,7 @@
             android:src="@drawable/location"/>
 
         <TextView
+            android:id="@+id/mapclick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -106,6 +127,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/mapview"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
@@ -114,38 +136,6 @@
             android:src="@drawable/map" />
     </LinearLayout>
 
-    <RadioGroup
-        android:layout_marginTop="13dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="35dp"
-            android:text="Gender"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-        <RadioButton
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Male"
-            android:textSize="20dp"/>
-
-        <RadioButton
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:gravity="center"
-            android:textSize="20dp"/>
-    </RadioGroup>
 
 
     <LinearLayout
@@ -188,9 +178,11 @@
 
 
             <EditText
+                android:id="@+id/newpassword"
                 android:hint="Enter Your Password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                tools:ignore="InvalidId" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -203,16 +195,18 @@
 
 
         <EditText
+            android:id="@+id/reEnterPassword"
             android:hint="Re-enter Your Password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            tools:ignore="InvalidId" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
 
     <Button
-        android:id="@+id/regsubmitt"
+        android:id="@+id/submitt"
         android:layout_width="237dp"
         android:textColor="@color/black"
         android:backgroundTint="@color/btn"

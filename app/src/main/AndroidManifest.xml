@@ -29,6 +29,7 @@
         tools:targetApi="31">
 
         <!-- Order activities alphabetically -->
+        <activity android:name=".Registrationform" android:exported="false" />
         <activity android:name=".Dashboard" android:exported="false" />
         <activity android:name=".Details" android:exported="false" />
         <activity android:name=".EditProfile" android:exported="false" />
@@ -49,7 +50,7 @@
         <activity android:name=".Workuplodeimages" android:exported="false" />
         <activity android:name=".customerregisation" android:exported="false" />
         <activity android:name=".dashboardhome" android:exported="false" />
-        <activity android:name=".registrationform" android:exported="false" />
+
         <activity android:name=".splash" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

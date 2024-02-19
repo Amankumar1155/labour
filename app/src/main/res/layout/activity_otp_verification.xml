@@ -54,59 +54,17 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/e1"
-
-            android:maxLength="1"
+            android:id="@+id/otpEnter"
+            android:maxLength="4"
+            android:inputType="number"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_margin="12dp"
-            android:layout_width="50dp"
-            android:layout_height="60dp"/>
-
-        <EditText
-            android:id="@+id/e2"
-
-            android:maxLength="1"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_margin="12dp"
-            android:layout_width="50dp"
-            android:layout_height="60dp"/>
-
-        <EditText
-            android:id="@+id/e3"
-
-            android:maxLength="1"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_margin="12dp"
-            android:layout_width="50dp"
-            android:layout_height="60dp"/>
-
-        <EditText
-            android:id="@+id/e4"
-
-            android:maxLength="1"
-            android:textAlignment="center"
-
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_margin="12dp"
-            android:layout_width="50dp"
-            android:layout_height="60dp"/>
-
-
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            />
 
 
     </LinearLayout>

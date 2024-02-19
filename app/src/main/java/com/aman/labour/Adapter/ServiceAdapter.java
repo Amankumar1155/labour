@@ -14,7 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.aman.labour.R;
-import com.aman.labour.registrationform;
+import com.aman.labour.Registrationform;
 
 public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewHolder>
 {
@@ -51,10 +51,10 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewHo
             public void onClick(View v) {
                 if(cardName[position]=="Ram")
                 {
-                    Intent intent=new Intent(context, registrationform.class);
-                    context.startActivity(intent);
+                   Intent i=new Intent(context,Registrationform.class);
+                   context.startActivity(i);
                 }
-                
+
                 else
                 {
                     Toast.makeText(context, "Not Found", Toast.LENGTH_SHORT).show();

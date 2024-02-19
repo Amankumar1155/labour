@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,8 @@ public class Loginpage extends AppCompatActivity {
     Button log;
     ImageView call, whatsapp;
     TextView btn;
+
+    EditText e1,e2;
 
 
     @Override
@@ -43,19 +46,23 @@ public class Loginpage extends AppCompatActivity {
         call = findViewById(R.id.callbtn);
         whatsapp = findViewById(R.id.whatsappbtn);
         btn = findViewById(R.id.passreset);
+        e1=findViewById(R.id.loginid);
+        e2=findViewById(R.id.password);
+
 
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                startActivity(new Intent(Loginpage.this, Dashboard.class));
+                String id = e1.getText().toString();
+                String pass = e2.getText().toString();
+                Toast.makeText(Loginpage.this, "Number is:- "+id, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Loginpage.this, "Password is:- "+pass, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Loginpage.this, Dashboard.class);
+                startActivity(intent);
                 finish();
+
             }
-
-
         });
-
-
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

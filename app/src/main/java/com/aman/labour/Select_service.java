@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.aman.labour.Adapter.ServiceAdapter;
 
@@ -14,6 +15,10 @@ public class Select_service extends AppCompatActivity {
     RecyclerView recyclerView;
 
     String names[]={"Ram","Shyam"};
+    String otp;
+
+
+
 
     @Override
     public void onBackPressed() {
@@ -22,10 +27,14 @@ public class Select_service extends AppCompatActivity {
         finish();
     }
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_service);
+
 
         recyclerView=findViewById(R.id.gridRecyclerView);
 
